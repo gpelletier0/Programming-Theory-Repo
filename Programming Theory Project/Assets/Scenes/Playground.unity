@@ -574,7 +574,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5329545011621679224, guid: 73407945616092c31b16fc4b701add2d, type: 3}
       propertyPath: enemyPools.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5329545011621679224, guid: 73407945616092c31b16fc4b701add2d, type: 3}
+      propertyPath: enemyPools.Array.data[0].prefab
+      value: 
+      objectReference: {fileID: 8791660203962803265, guid: 60ebe7b894ae6057caa5899455bb64be, type: 3}
+    - target: {fileID: 5329545011621679224, guid: 73407945616092c31b16fc4b701add2d, type: 3}
+      propertyPath: enemyPools.Array.data[0].poolSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5329545011621679224, guid: 73407945616092c31b16fc4b701add2d, type: 3}
+      propertyPath: enemyPools.Array.data[0].spawnTime
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5329545011621679226, guid: 73407945616092c31b16fc4b701add2d, type: 3}
       propertyPath: m_RootOrder
@@ -623,6 +635,22 @@ PrefabInstance:
     - target: {fileID: 5329545011621679229, guid: 73407945616092c31b16fc4b701add2d, type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713434228701398883, guid: 73407945616092c31b16fc4b701add2d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713434228701398883, guid: 73407945616092c31b16fc4b701add2d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713434228701398883, guid: 73407945616092c31b16fc4b701add2d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713434228701398883, guid: 73407945616092c31b16fc4b701add2d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6490873310717927356, guid: 73407945616092c31b16fc4b701add2d, type: 3}
       propertyPath: objectPools.Array.size

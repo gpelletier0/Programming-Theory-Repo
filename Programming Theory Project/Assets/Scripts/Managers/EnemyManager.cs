@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Linq;
-//using Entities.Enemies;
+using Entities.Enemies;
 using Factories;
 using Pools;
 using UnityEngine;
@@ -40,14 +40,13 @@ namespace Managers
             {
                 yield return new WaitForSeconds(enemyControllerPool.spawnTime);
 
-                /*
                 var enemy = enemyControllerPool.Pool.GetFirst().GetComponent<EnemyController>();
                 if (enemy)
                 {
                     var position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
                     enemy.Spawn(position);
                     enemy.OnAddPoints += OnAddPoints;
-                }*/
+                }
             }
         }
 

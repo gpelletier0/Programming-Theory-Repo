@@ -33,7 +33,8 @@ namespace Managers
             _saveFile = new SaveFile();
             _saveFile.AddNewHiScore(_playerName, Score);
 
-            SceneManager.LoadScene(2);
+            Time.timeScale = 0;
+            //SceneManager.LoadScene(2);
         }
 
         /// <summary>

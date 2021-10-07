@@ -339,6 +339,8 @@ GameObject:
   - component: {fileID: 1485616599784614956}
   - component: {fileID: 1485616599784614959}
   - component: {fileID: 1485616599784614958}
+  - component: {fileID: 3177254820141436941}
+  - component: {fileID: 5439803411549781079}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -429,6 +431,32 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3177254820141436941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485616599784614953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962ae27d9b82a9d46bcca4504ba45ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthFillImage: {fileID: 3643229140022532058}
+--- !u!114 &5439803411549781079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485616599784614953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054b360590becdd7f9d26fd34d204536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScore: {fileID: 8450941860950691273}
 --- !u!1 &1816251322845483353
 GameObject:
   m_ObjectHideFlags: 0

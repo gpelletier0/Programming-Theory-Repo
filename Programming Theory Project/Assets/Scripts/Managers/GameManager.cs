@@ -1,5 +1,5 @@
+using Entities;
 using Saves;
-//using Entities;
 using Singletons;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,17 +11,17 @@ namespace Managers
     {
         private string _playerName;
         private SaveFile _saveFile;
-
-        private int _score;
+        
+        public int Score { get; private set; }
 
         protected override void Initialize()
         {
             var playerName = PlayerPrefs.GetString("PlayerName");
             _playerName = string.IsNullOrEmpty(playerName) ? Constants.NewPlayerName : playerName;
-            _score = 0;
+            Score = 0;
 
-            //var playerHealth = GameObject.FindWithTag("Player").GetComponent<Health>();
-            //playerHealth.OnDeath += GameOver;
+            var playerHealth = GameObject.FindWithTag("Player").GetComponent<Health>();
+            playerHealth.OnDeath += GameOver;
         }
 
         /// <summary>
@@ -31,7 +31,7 @@ namespace Managers
         {
             Debug.Log("Game Over");
             _saveFile = new SaveFile();
-            _saveFile.AddNewHiScore(_playerName, _score);
+            _saveFile.AddNewHiScore(_playerName, Score);
 
             SceneManager.LoadScene(2);
         }
@@ -42,7 +42,7 @@ namespace Managers
         /// <param name="points">points to add</param>
         public void AddPoints(int points)
         {
-            _score += points;
+            Score += points;
         }
     }
 }

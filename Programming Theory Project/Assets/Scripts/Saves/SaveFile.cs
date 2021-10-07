@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Text;
-//using Newtonsoft.Json;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace Saves
@@ -55,7 +55,7 @@ namespace Saves
             if (File.Exists(path))
             {
                 string json = File.ReadAllText(path);
-                //data = JsonConvert.DeserializeObject<SaveData>(json);
+                data = JsonConvert.DeserializeObject<SaveData>(json);
                 TrimHiScores(ref data);
             }
 
@@ -68,8 +68,8 @@ namespace Saves
         private void WriteSaveData(SaveData data)
         {
             TrimHiScores(ref data);
-            //string json = JsonConvert.SerializeObject(data);
-            //File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
+            string json = JsonConvert.SerializeObject(data);
+            File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
         }
 
         /// <summary>

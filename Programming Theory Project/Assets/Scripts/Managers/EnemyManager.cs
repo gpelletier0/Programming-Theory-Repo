@@ -40,7 +40,7 @@ namespace Managers
             {
                 yield return new WaitForSeconds(enemyControllerPool.spawnTime);
 
-                var enemy = enemyControllerPool.Pool.GetFirst().GetComponent<EnemyController>();
+                var enemy = enemyControllerPool.Pool.GetFirst()?.GetComponent<EnemyController>();
                 if (enemy)
                 {
                     var position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
